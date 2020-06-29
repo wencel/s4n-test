@@ -1,0 +1,28 @@
+@import '../../../global.sass'
+.Input
+  display: flex
+  flex-direction: column
+  position: relative
+  input
+    border: none
+    border-bottom: 1px solid $s4nGray
+    padding: 10px 5px
+    color: $s4nGray
+    width: -webkit-fill-available
+    font-size: 15px
+    & ~ .focusBorder
+      position: absolute
+      bottom: 0
+      left: 0
+      width: 0
+      height: 2px
+      background-color: $s4nRed
+      transition: 0.4s
+    &:focus
+      outline: none 
+      & ~ .focusBorder
+        width: 100%
+        transition: 0.4s
+  &.Error
+    input
+      background-color: $s4nRedError

@@ -1,0 +1,25 @@
+@import '../../../global.sass'
+.Loading 
+  display: inline-block
+  width: 80px
+  height: 80px
+
+.Loading:after 
+  width: 64px
+  height: 64px
+  content: " "
+  display: block
+  margin: 8px
+  border-radius: 50%
+  border: 6px solid $s4nRed
+  border-color: $s4nRed transparent $s4nRed transparent
+  animation: loading-animation 1.2s linear infinite
+
+@keyframes loading-animation 
+  0% 
+    transform: rotate(0deg)
+  
+  100% 
+    transform: rotate(360deg)
+  
+

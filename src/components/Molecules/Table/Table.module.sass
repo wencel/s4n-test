@@ -1,0 +1,37 @@
+@import '../../../global.sass'
+.Table 
+  margin-top: 20px
+  width: 984px
+  &>* 
+    padding: 0 10px
+    position: relative
+    word-break: break-word
+  th 
+    background: $bgColor
+    color: $s4nGray
+  .urlText
+    color: $s4nRed
+  th:nth-child(1)
+    width: 110px
+  th:nth-child(2)
+    width: 185px
+  th:nth-child(3)
+    width: 250px
+  th:nth-child(4)
+    width: 200px
+  td
+    padding: 10px
+  tr:hover
+    background: $s4nRedError
+  button
+    background-color: transparent
+    border: none
+    cursor: pointer
+    font-weight: bold
+    color: $s4nGray
+    font-size: 16px
+    padding: 0 10px
+    height: 40px
+    width: 100%
+    &:focus
+      outline: none
